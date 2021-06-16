@@ -1,4 +1,4 @@
-# JavaScript Homework - JavaScript and DOM Manipulation
+# JavaScript and DOM Manipulation
 
 ## Background
 
@@ -14,7 +14,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 ### Before You Begin
 
-1. Create a new repository for this project called `javascript-challenge`. **Do not add this homework to an existing repository**.
+1. Create a new repository for this project called `javascript-challenge`. 
 
 2. Clone the new repository to your computer.
 
@@ -58,13 +58,11 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 ## Rubric
 
-[Unit 14 Rubric - JavaScript Homework - JavaScript and DOM Manipulation](https://docs.google.com/document/d/1KWNS-xCwYBONjvlrIz4zyGkcUu0mP2kpMQh6qj0hKf8/edit?usp=sharing)
+[Unit 14 Rubric - JavaScript and DOM Manipulation](https://docs.google.com/document/d/1KWNS-xCwYBONjvlrIz4zyGkcUu0mP2kpMQh6qj0hKf8/edit?usp=sharing)
 
 - - -
 
 **Good luck!**
 
 - - -
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 # Javascript-Challenge
