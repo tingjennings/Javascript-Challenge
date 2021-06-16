@@ -62,7 +62,6 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 - - -
 
-**Good luck!**
+Ting Jennings © 2020. All Rights Reserved.
 
-- - -
 # Javascript-Challenge
