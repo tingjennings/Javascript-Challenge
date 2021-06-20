@@ -19,6 +19,26 @@ function defaultPopulate(tableData) {
             cell.text(value);
         });
     });
+
+    // Populate Drop Down
+    d3.select("#state").selectAll("option")
+        .data(d3.map(data.sort(function (a,b) {return d3.ascending(a.state, b.state);}), function(d){return d.state;}).keys())
+        .enter()
+        .append("option")
+        .text(function(d){return d.toUpperCase();})
+        .attr("value",function(d){return d;});
+    d3.select("#city").selectAll("option")
+        .data(d3.map(data.sort(function (a,b) {return d3.ascending(a.city, b.city);}), function(d){return d.city;}).keys())
+        .enter()
+        .append("option")
+        .text(function(d){return toTitleCase(d);})
+        .attr("value",function(d){return d;});
+    d3.select("#shape").selectAll("option")
+        .data(d3.map(data.sort(function (a,b) {return d3.ascending(a.shape, b.shape);}), function(d){return d.shape;}).keys())
+        .enter()
+        .append("option")
+        .text(function(d){return toTitleCase(d);})
+        .attr("value",function(d){return d;});
 };
 
 defaultPopulate(tableData);
@@ -63,3 +83,12 @@ function runEnter() {
         tbody.append("tr").text("No UFO Sighting found. Try again!");
     };
 };
+
+function toTitleCase(str) {
+    return str.replace(
+      /\w\S*/g,
+      function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      }
+    );
+  };
