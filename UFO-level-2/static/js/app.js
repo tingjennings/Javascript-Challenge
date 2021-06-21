@@ -39,6 +39,12 @@ function defaultPopulate(tableData) {
         .append("option")
         .text(function(d){return toTitleCase(d);})
         .attr("value",function(d){return d;});
+    d3.select("#datetime").selectAll("option")
+        .data(d3.map(data.sort(function (a,b) {return d3.ascending(a.datetime, b.datetime);}), function(d){return d.datetime;}).keys())
+        .enter()
+        .append("option")
+        .text(function(d){return d;})
+        .attr("value",function(d){return d;});
 };
 
 defaultPopulate(tableData);
